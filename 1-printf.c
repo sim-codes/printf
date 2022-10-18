@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * _printf - prints and input into the standard output
@@ -41,7 +41,7 @@ int _printf(const char *format, ...)
 			p++;
 		if (!get_specifier(p))
 			sum += print_from_to(start, p,
-					params.l_modifier || params.h_modifier ? p - 2 : 0);
+					params.l_modifier || params.h_modifier ? p - 1 : 0);
 		else
 			sum += get_print_func(p, ap, &params);
 	}
