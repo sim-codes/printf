@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * init_params - clears struct fields and reset buf
@@ -9,7 +9,7 @@ include "main.h"
 
 void init_params(params_t *params, va_list ap)
 {
-	params->unsign = 1;
+	params->unsign = 0;
 
 	params->plus_flag = 0;
 	params->space_flag = 0;
